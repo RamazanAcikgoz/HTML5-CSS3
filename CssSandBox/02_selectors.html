@@ -1,0 +1,63 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>CSS Selectors</title>
+     <style>
+         /* Element selectors */
+         /* Element it means a TAG */
+         body {
+             background-color: #333;
+         }
+
+         /* h2 selector taking each tags which contains h2 */
+         /* # symbol is for IDs */
+         h2#primary-headings{
+             color: green;
+         }
+         /* h2 id="green-heading" tags */
+         /* we used h2#green-heading(id) */
+         /* It's targeting id */
+         /* #green-heading will be enough and will targer just this ID */
+         /* . symbol is for classes */
+         .red-heading{
+             color: blue;
+         }
+         #welcome{
+             background-color:#f4f4f4;
+         }
+         /* Multiple Selectors */
+         /*for both section (welcome and about) */
+         #welcome,#about{
+             border: 1px solid #ccc;
+             padding: 10px;
+             margin-bottom: 5px;
+         }
+         /* Nested Selectors */
+         /* Target in as "welcome" (inside of) -> p */
+         /* ID name and whitespace p */
+         #welcome p {
+             font-size: 20px;
+         }
+         #about {
+             color: white;
+         }
+     </style>
+ </head>
+ <!-- # it must contains specific name -->
+ <!-- . could contains general name because we will have only one for this section -->
+ <!-- as div id="welcome" : We will not have another welcome section -->
+ <body>
+     <div id="welcome">
+         <h2 id="primary-headings">Welcome</h2>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam doloribus,
+             vero distinctio atque tempora dolore neque adipisci rerum id dignissimos!</p>
+     </div>
+     <div id="about">
+         <h2 class="red-heading">About</h2>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Dolorem obcaecati ipsum molestias? Adipisci, quasi! Blanditiis animi eligendi vel asperiores est.</p>
+     </div>
+ </body>
+ </html>

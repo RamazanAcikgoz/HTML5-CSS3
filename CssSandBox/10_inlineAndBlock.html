@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Inline&Block Styling</title>
+    <!-- This topic is important for flexbox and grid system -->
+    <style>
+        /* It is a way to change block level element to inline */
+        li{
+            display: inline;
+        }
+        li a{
+            padding-right: 20px;
+        }
+        /* Inline level element to change block level element */
+        img{
+            /* we cant use margin for inline elements */
+            /* It must be block level element */
+            display: block;
+            margin: auto;
+        }
+        .box{
+            background: #f4f4f4;
+            /* border: 1px solid #333; */
+            padding: 20px;
+            margin-bottom: 15px;
+            display: inline-block;
+            width: 32%;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <!-- Li is a block level element -->
+        <li><a href="#">Technology</a></li>
+        <li><a href="#">Business</a></li>
+        <li><a href="#">Fashion</a></li>
+    </ul>
+    <br>
+    <br>
+    <img src="/img/deneme.jpeg" alt="My image" width="200px" height="200px">
+    <br>
+    <br>
+    
+    <div class="box">
+        <h3>Heading</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, facere.
+           Optio, quo facilis dolore sit eum ratione asperiores qui eos.</p>
+    </div>
+    <div class="box">
+        <h3>Heading</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, facere.
+           Optio, quo facilis dolore sit eum ratione asperiores qui eos.</p>
+    </div>
+    <div class="box">
+        <h3>Heading</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, facere.
+           Optio, quo facilis dolore sit eum ratione asperiores qui eos.</p>
+    </div>
+</body>
+</html>
