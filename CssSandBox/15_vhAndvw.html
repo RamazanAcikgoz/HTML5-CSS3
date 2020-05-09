@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS ViewportHeight & ViewportWidth</title>
+    <!-- Viewport is a place in browers which contain website -->
+    <!-- ViewportHeight = 100 slices from left to right all across -->
+    <!-- ViewportWidth = 100 slices from up to down all vertical across -->
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        header {
+            background: #333 url(https://source.unsplash.com/daily)
+            no-repeat center center/cover;
+            /* center(x) center(y)/cover */
+            color: #fff;
+            /* VH thus bg color cover all page */
+            height: 100vh;
+            text-align: center;
+            padding: 2rem;
+            padding: 15rem;
+        }
+        header h1{
+            font-size: 3rem;
+        }
+        header p{
+            margin: 1rem 0;
+        }
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            background: #f4f4f4;
+            color: #333;
+            padding: 0.75rem 2rem;
+        }
+        section{
+            padding: 2rem;
+        }
+        /* When viewport is 450px or less then this styling kick in */
+        @media (max-height:450px) {
+            header{
+                padding-top: 5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome To Our Website</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+           Labore dolore doloremque velit accusamus ex quis?</p>
+           <a href="#" class="btn">Find Out More</a>
+    </header>    
+    <section>
+        <h3>About Our Company</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+           Facilis quas accusantium beatae explicabo natus animi harum doloremque,
+           maxime distinctio a praesentium rerum in numquam reprehenderit unde quis
+           corporis et voluptatibus fugiat commodi. Quidem, excepturi. Quidem qui distinctio
+           eligendi dicta. Atque id libero tenetur tempore dolor et nobis voluptas necessitatibus repellendus.</p>
+    </section>
+</body>
+</html>
