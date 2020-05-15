@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background: forestgreen;
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+.container{
+    position: relative;
+    margin: 10%;
+    width: 28rem;
+
+
+}
+.white-keys kbd{
+    display: inline-block;
+    background: white;
+    width: 4rem;
+    font-size: 2rem;
+    height: 200px;
+    text-align: center;
+    border: 2px solid black;
+    margin-left: -4px;
+    padding-top: 5rem; /* center characters */
+
+}
+.black-keys kbd{
+    display: inline-block;
+    background: black;
+    color: white;
+    width: 2rem;
+    padding: 4.5rem 0 1rem 0;
+    border: 2px solid white;
+    text-align: center;
+
+}
+.black-keys{
+    position: absolute;
+    top: 0;
+}
+.black-keys kbd:nth-child(1) {
+    margin-left: 2.8rem;
+}
+
+.black-keys kbd:nth-child(2) {
+    margin-left: 1.8rem;
+}
+
+.black-keys kbd:nth-child(3) {
+    margin-left: 5.6rem;
+}
+
+.black-keys kbd:nth-child(4) {
+    margin-left: 1.8rem;
+}
+
+.black-keys kbd:nth-child(5) {
+    margin-left: 1.8rem;
+}
