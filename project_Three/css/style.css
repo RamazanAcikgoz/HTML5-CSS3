@@ -63,3 +63,11 @@ body{
 .black-keys kbd:nth-child(5) {
     margin-left: 1.8rem;
 }
+
+#main-footer {
+    text-align: center;
+    background: #444;
+    color: #fff;
+    padding: 20px;
+    margin-top: 220px;
+}
