@@ -8,7 +8,7 @@ document.addEventListener("keypress", function(event) {
         "E","T","Y","U", "a", "s", "d","f","g","h","j","w","e","t","y","u"];
     if (keysPiano.includes(event.key)) {
         console.log("The '" + event.key + "' key is pressed.");
-        audio = new Audio(event.key +".mp3")
+        audio = new Audio("./sounds/"+event.key +".mp3")
         audio.play();
     }
     else {
