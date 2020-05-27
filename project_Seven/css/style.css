@@ -58,9 +58,9 @@ h1,h2,h3,h4,h5,h6{
     margin-bottom: 0.5rem;
 }
 
-.category-sports{background: var(--sports-color); color: var(--dark-color);}
-.category-ent{background: var(--ent-color); color: var(--dark-color);}
-.category-tech{background: var(--tech-color); color: var(--dark-color);}
+.category-sports{background: var(--sports-color); color: var(--light-color);}
+.category-ent{background: var(--ent-color); color: var(--light-color);}
+.category-tech{background: var(--tech-color); color: var(--light-color);}
 .btn{
     display: inline-block;
     border: none;
@@ -111,6 +111,10 @@ h1,h2,h3,h4,h5,h6{
 .p-2{padding: 2rem;}
 .p-3{padding: 3rem;}
 
+.l-heading{
+    font-size: 3rem;
+}
+
 .list li{
     padding: 0.5rem 0;
     border-bottom: #555 1px dotted;
@@ -150,19 +154,20 @@ h1,h2,h3,h4,h5,h6{
     justify-self: end;
     display: flex;
 }
-#main-nav ul li a{
+#main-nav ul li a {
     padding: 0.75rem;
     font-weight: bold;
-    color: #333;
-}
-#main-nav ul li a.current{
-    background: var(--primary-color);
-    border-radius: 5px;
-}
-#main-nav ul li a.current:hover{
+  }
+  
+#main-nav ul li a.current {
     background: var(--secondary-color);
+    color: #fff;
+  }
+  
+#main-nav ul li a:hover {
+    background: var(--light-color);
     color: var(--dark-color);
-}
+  }
 #main-nav .social{
     justify-self: center;
 }
@@ -220,6 +225,17 @@ h1,h2,h3,h4,h5,h6{
 }
 #home-articles .articles-container > *:last-child{
     grid-column: 2 / span 2;
+}
+#article .meta{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #eee;
+    padding: 0.5rem;
+}
+/* push it down category tag */
+#article .meta .category{
+    margin-top: 0.4rem;
 }
 
 /* Footer */
